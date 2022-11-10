@@ -46,7 +46,7 @@ const DisplayImage = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <img
-        className=" max-h-[600px] object-contain rounded-xl"
+        className=" max-h-[600px] object-contain rounded-xl "
         src={data?.results[0].urls.regular}
       ></img>
     </div>

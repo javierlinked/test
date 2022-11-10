@@ -5,23 +5,6 @@ function UseFetch(url) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [optionalWish, setOptionalWish] = useState({
-    color: [
-      "black_and_white",
-      "black",
-      "white",
-      "yellow",
-      "orange",
-      "red",
-      "purple",
-      "magenta",
-      "green",
-      "teal",
-      "blue",
-    ],
-    orientation: ["landscape", "portrait", "squarish"],
-    query: "",
-  });
 
   useEffect(() => {
     setLoading(true);
@@ -42,7 +25,6 @@ function UseFetch(url) {
     data,
     loading,
     error,
-    optionalWish,
   };
 }
 
